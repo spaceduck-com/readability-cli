@@ -1,6 +1,6 @@
 {
   "name": "@spaceduckapp/readability-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple CLI wrapper around @mozilla/readability",
   "main": "src/index.ts",
   "type": "commonjs",
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/spaceduck-com/readability-cli.git"
   },
   "author": "The team at Spaceduck",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/spaceduck-com/readability-cli/issues"
   },
