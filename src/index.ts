@@ -1,5 +1,6 @@
 import { JSDOM } from "jsdom";
 import { parseArgs } from "./cli";
+import { applyHacks } from "./hacks";
 import { readData, writeData } from "./io";
 import { getReadability } from "./readability";
 import { sanitizeHtml } from "./sanitize";
@@ -20,6 +21,7 @@ const getResult = async (data: string | Buffer, options: Options) => {
 };
 
 const main = async () => {
+  applyHacks();
   const options = parseArgs();
   const data = await readData(options.cli.path, options.cli.encoding);
   const result = await getResult(data, options);
