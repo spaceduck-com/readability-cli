@@ -10,6 +10,9 @@ build:
         --outfile=dist/readability-cli.js
     chmod +x dist/readability-cli.js
 
+run *ARGS: build
+    node dist/readability-cli.js {{ARGS}}
+
 # Remove any existing build artefacts
 clean:
     rm -rf ./dist
