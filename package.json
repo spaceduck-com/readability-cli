@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "esbuild": "esbuild",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "upgrade-deps": "ncu --interactive --format group --root"
   },
   "bin": {
     "readability-cli": "dist/readability-cli.js"
@@ -22,17 +23,17 @@
   },
   "homepage": "https://github.com/spaceduck-com/readability-cli#readme",
   "dependencies": {
-    "@mozilla/readability": "^0.5.0",
-    "argparse": "^2.0.1",
-    "dompurify": "^3.1.6",
-    "jsdom": "^25.0.0"
+    "@mozilla/readability": "0.6.0",
+    "argparse": "2.0.1",
+    "dompurify": "3.2.4",
+    "jsdom": "26.0.0"
   },
   "devDependencies": {
-    "@types/argparse": "^2.0.16",
-    "@types/dompurify": "^3.0.5",
-    "@types/jsdom": "^21.1.7",
-    "@types/node": "22.9.0",
-    "esbuild": "^0.23.1",
-    "typescript": "^5.6.2"
+    "@types/argparse": "2.0.17",
+    "@types/jsdom": "21.1.7",
+    "@types/node": "22.13.9",
+    "esbuild": "0.25.0",
+    "npm-check-updates": "17.1.15",
+    "typescript": "5.8.2"
   }
 }
