@@ -75,7 +75,7 @@ const addReadabilityOptions = (parser: ArgumentParser) => {
   debugGroup.add_argument("-d", "--debug", {
     action: "store_true",
     default: false,
-    help: "Enable debug logging. Logs will be sent to stderr.`",
+    help: "Enable debug logging. Logs will be sent to stderr.",
   });
   debugGroup.add_argument("-D", "--no-debug", {
     action: "store_false",
